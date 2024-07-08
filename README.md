@@ -14,13 +14,13 @@ Welcome to our Recipe Sharing Platform Frontend repository! This project provide
 
 ## Technologies Used
 
--`React`: Frontend framework for building user interfaces.
+- `React`: Frontend framework for building user interfaces.
 
--`Context API`: State management for managing global application state.
+- `Context API`: State management for managing global application state.
 
--`Bootstrap`: CSS framework for responsive and mobile-first design.
+- `Bootstrap`: CSS framework for responsive and mobile-first design.
 
--`Custom CSS`: Additional styling and customization.
+- `Custom CSS`: Additional styling and customization.
 
 ## Contributing
 
