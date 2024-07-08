@@ -1,0 +1,81 @@
+.main4 {
+    padding: 20px;
+   background-image: url("../../public//i-like-food.svg");
+  }
+  
+
+
+  .container4 {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  
+  .card4 {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="file"],
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 12px;
+  }
+  
+  input[type="file"] {
+    height: 50px;
+    
+    
+  }
+  
+  textarea {
+    height: 150px;
+   
+  }
+  
+  button {
+    background-color: rgb(255, 180, 40);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  
+  button:hover {
+    background-color:rgb(202, 133, 6);
+  }
+
+  .error-span {
+  color: red;
+  animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}

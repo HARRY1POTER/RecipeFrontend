@@ -1,0 +1,126 @@
+
+.bo {
+  width: 100%;
+  max-width: 1200px;
+
+  padding: 20px;
+margin: 50px auto;
+box-shadow: 0 4px 8px rgb(162, 161, 159);
+border-radius: 50px;
+border: white solid 1px ;
+}
+
+.con { 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.details {
+  flex: 2;
+}
+
+.detail {
+  margin-bottom: 10px;
+  
+}
+
+.title {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.o {
+  font-weight: bold;
+    overflow-wrap: break-word;
+    font-size: 30px;
+}
+
+.text1{
+
+  overflow-wrap: break-word;
+  font-size: 24px;
+  white-space: pre-wrap;
+}
+
+.text {
+
+
+  word-wrap: break-word;
+  font-size: 24px;
+
+  
+}
+
+
+@media screen and (max-width: 768px) {
+  .con {
+    flex-direction: column;
+  }
+
+  .image-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 25px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .o {
+    font-size: 20px;
+  }
+}
+
+
+ 
+.gap button {
+  margin-right: 10px; 
+}
+
+
+
+.save-button {
+  background-color: #ffc107; 
+  color: #fff; 
+  padding: 0.5rem 1rem; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; 
+}
+
+
+@media screen and (max-width: 768px) {
+  .save-button {
+    font-size: 0.9rem; 
+    padding: 0.4rem 0.8rem; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .save-button {
+    font-size: 0.8rem; 
+    padding: 0.3rem 0.6rem; 
+  }
+}

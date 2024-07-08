@@ -1,0 +1,59 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+.caveat-font {
+  font-family: 'Caveat', cursive;
+  color:orange;
+  cursor: pointer;
+}
+
+.zero {
+  color: orange;
+}
+
+
+.dropdown-btn {
+  background-color: transparent;
+  color: orange ;
+  border: none;
+  cursor: pointer;
+ 
+  font-size: 28px;
+  font-weight: bold;
+  outline: none;
+  margin-top: 9px;
+}
+
+
+.dropdown-icon {
+  margin-left: 5px;
+}
+
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+.dropdown-item {
+  color: orange;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f9f9f9;
+
+}
+
+.dropdown-divider {
+  border-top: 1px solid #ddd;
+}
+

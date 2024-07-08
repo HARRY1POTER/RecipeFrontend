@@ -1,0 +1,170 @@
+
+.card-container {
+  padding: 20px;
+}
+
+
+.Ecard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  max-height: 200px; 
+  object-fit: cover;
+}
+
+
+.card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+}
+
+
+.card-text {
+  color: #555;
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+  font-size: 20px;
+
+}
+
+
+.btn {
+  background-color: rgb(255, 180, 40);
+  border-color: rgb(255, 180, 40);
+  border-radius: 150px;
+  color:white
+}
+
+.btn:hover {
+  background-color: rgb(202, 133, 6);
+  border-color: rgb(202, 133, 6);
+}
+
+
+.card-container > .row > .col {
+  margin-bottom: 20px;
+}
+
+.ima img {
+  width: 100%; 
+  height: 550px; 
+  display: block; 
+}
+
+.ima {
+  position: relative;
+
+}
+
+
+
+.ima .overlay {
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.ima .overlay h2 {
+  color: white;
+  font-size: 60px;
+  
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+
+.search-bar input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  margin-right: 10px;
+  width: 80%; 
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 2560px) {
+  .search-bar input[type="text"] {
+    width: 60%; 
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .search-bar input[type="text"] {
+    width: 30%; 
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .search-bar input[type="text"] {
+    width: 60%; 
+  }
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  .search-bar {
+    padding-left: 250px; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search-bar button {
+    padding: 8px 16px; 
+  }
+}
+
+
+.ima img {
+  width: 100%;
+  height: 650px; 
+  display: block;
+}
+
+.ima {
+  position: relative;
+}
+
+.ima .overlay {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ima .overlay h2 {
+  color: white;
+  font-size: 60px; 
+  text-align: center; 
+  max-width: 80%; 
+}
