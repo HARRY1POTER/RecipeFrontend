@@ -22,7 +22,7 @@ Welcome to our Recipe Sharing Platform Frontend repository! This project provide
 
 - `Custom CSS`: Additional styling and customization.
   
-# How to Use:
+## How to Use:
 
 Clone this repository to your local machine.
 
