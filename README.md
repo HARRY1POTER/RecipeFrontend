@@ -22,3 +22,12 @@ Welcome to our Recipe Sharing Platform Frontend repository! This project provide
 
 - `Custom CSS`: Additional styling and customization.
   
+# How to Use:
+
+Clone this repository to your local machine.
+
+Install dependencies using `npm install`.
+
+Run the development server using `npm start`.
+
+Access the landing page in your browser at http://localhost:3000.
