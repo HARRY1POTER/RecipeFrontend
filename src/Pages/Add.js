@@ -8,8 +8,8 @@ import "./Add.css";
 function Add() {
   const [name, setName] = useState("");
   const [about, setAbout] = useState("");
-  const [photo, setPhoto] = useState(null);
-  console.log("🚀 ~ Add ~ photo:", photo)
+  const [photo, setPhoto] = useState();
+  console.log("🚀 ~ Add ~ photo:", photo);
   const [keyword, setKeyword] = useState("");
   const [steps, setSteps] = useState([""]);
   const [ingredients, setIngredients] = useState([""]);
