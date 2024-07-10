@@ -57,7 +57,7 @@ function Explore() {
                 <div className="col" key={index}>
                   <div className="Ecard h-100">
                     <img
-                      src={`${process.env.REACT_APP_API_BASE_URL}/${item.photo}`}
+                      src={`${https://recipe-backend-eight.vercel.app}/${item.photo}`}
                       className="card-img-top"
                       alt="Recipe"
                     />
