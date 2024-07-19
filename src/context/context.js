@@ -15,7 +15,7 @@ export const MyProvider = ({ children }) => {
     try {
       const result = await axios.get("/Recipe");
       setRecipes(result.data);
-      console.log("Recipes ------->", result.data);
+      console.log("Recipes ------->", result?.data);
       // getRecipes();
     } catch (err) {
       console.error("Error fetching recipes:", err);
@@ -25,11 +25,15 @@ export const MyProvider = ({ children }) => {
   const searchHandle = async (event) => {
     console.warn(event.target.value);
     let key = event.target.value;
+    console.log("🚀 ~ searchHandle ~ key:", key);
     if (key) {
       try {
         setLoading(true);
-        let result = await fetch(`/search/${key}`);
+        let result = await fetch(
+          `${process.env.REACT_APP_API_BASE_URL}/search/${key}`
+        );
         result = await result.json();
+        console.log("🚀 ~ searchHandle ~ result:", result);
         if (result) {
           setRecipes(result);
         }

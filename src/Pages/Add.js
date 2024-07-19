@@ -7,19 +7,28 @@ import "./Add.css";
 
 function Add() {
   const [name, setName] = useState("");
+  console.log("🚀 ~ Add ~ name:", name);
   const [about, setAbout] = useState("");
-  const [photo, setPhoto] = useState();
+  console.log("🚀 ~ Add ~ about:", about);
+  const [photo, setPhoto] = useState(null);
   console.log("🚀 ~ Add ~ photo:", photo);
   const [keyword, setKeyword] = useState("");
+  console.log("🚀 ~ Add ~ keyword:", keyword);
   const [steps, setSteps] = useState([""]);
+  console.log("🚀 ~ Add ~ steps:", steps);
   const [ingredients, setIngredients] = useState([""]);
+  console.log("🚀 ~ Add ~ ingredients:", ingredients);
   const [error, setError] = useState(false);
 
   const onChangeImages = (e) => {
-    setPhoto(e.target.files[0]);
+    console.log("🚀 ~ onChangeImages ~ e:", e?.target.files[0]);
+    if (e.target.files && e.target.files[0]) {
+      let file = e.target.files[0];
+      setPhoto(file);
+    }
   };
 
-  const addRecipe = async () => {
+ /*  const addRecipe = async () => {
     if (!name || !about || !keyword || !steps || !ingredients) {
       setError(true);
       return;
@@ -54,7 +63,49 @@ function Add() {
         "An error occurred while adding the recipe. Please try again later."
       );
     }
+  }; */
+
+
+  const addRecipe = async () => {
+    if (!name || !about || !keyword || !steps || !ingredients) {
+      setError(true);
+      return;
+    }
+  
+    const formData = new FormData();
+    formData.append("photo", photo);
+    formData.append("recipeTitle", name);
+    formData.append("about", about);
+    formData.append("keywords", keyword);
+    formData.append("steps", JSON.stringify(steps));
+    formData.append("ingredients", JSON.stringify(ingredients));
+  
+    try {
+      console.log("FormData:", formData); // Log FormData before sending
+      console.log("Photo:", photo); // Log the photo object
+  
+      const response = await axios.post("/AddRecipe", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
+  
+      console.log("Response:", response.data);
+      toast.success("Recipe Added Successfully");
+      setName("");
+      setAbout("");
+      setKeyword("");
+      setSteps([""]);
+      setIngredients([""]);
+      setPhoto(null);
+    } catch (error) {
+      console.error("Error adding recipe:", error);
+      toast.error(
+        "An error occurred while adding the recipe. Please try again later."
+      );
+    }
   };
+  
 
   const handleAddField = (type) => {
     if (type === "steps") {

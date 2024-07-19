@@ -134,13 +134,13 @@ function Navigation() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
-        {/* <Route element={<AuthRoute />}> */}
+        <Route element={<AuthRoute />}>
           <Route path="/Explore" element={<Explore />} />
           <Route path="/Add" element={<Add />} />
           <Route path="/Save" element={<Save />} />
           <Route path="/Profile" element={<Profile />} />
           <Route path="/EditRecipe" element={<EditRecipe />} />
-        {/* </Route> */}
+        </Route>
         <Route path="/SignIn" element={<SignIn />} />
         <Route path="/LogIn" element={<LogIn />} />
         <Route path="/Full" element={<Full />} />
